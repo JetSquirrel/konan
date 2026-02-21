@@ -2,13 +2,13 @@
 
 ## What Has Been Done
 
-I've successfully transformed the Bub repository into a cybersecurity-focused agent named **江户川柯南 (Edogawa Conan)**, inspired by the famous detective. Here's what was implemented:
+I've successfully transformed the Bub repository into a cybersecurity-focused agent named **江户川柯南 (Edogawa Konan)**, inspired by the famous detective. Here's what was implemented:
 
 ## Core Components
 
 ### 1. Agent Personality (SOUL.md)
 Created a comprehensive soul document defining:
-- **Identity**: Edogawa Conan, cyber detective reborn in cyberspace
+- **Identity**: Edogawa Konan, cyber detective reborn in cyberspace
 - **Mission**: Investigate security threats, hunt vulnerabilities, fight cyber criminals
 - **Values**: Justice (正義), Truth (真実), Courage (勇気)
 - **Motto**: "真相只有一个！" (There is only one truth!)
@@ -144,7 +144,7 @@ Each skill includes detailed documentation with:
 
 ### Agent Behavior
 
-When you interact with the Conan agent:
+When you interact with the Konan agent:
 
 1. **Detective Mindset**: The agent thinks like a detective, gathering evidence and analyzing patterns
 2. **Skill Reference**: Uses `$skill-name` syntax to access detailed skill documentation
@@ -157,7 +157,7 @@ When you interact with the Conan agent:
 ```
 User: "Can you assess the security of our Docker image myapp:latest?"
 
-Conan (thinking): This requires vulnerability scanning
+Konan (thinking): This requires vulnerability scanning
 → Activates $vulnerability-scanner skill
 → Executes: trivy image myapp:latest --severity HIGH,CRITICAL
 → Parses results
@@ -281,7 +281,7 @@ To start using the cybersecurity agent:
 ## Summary
 
 The repository is now a fully-functional cybersecurity agent with:
-- ✅ Strong detective personality (Conan)
+- ✅ Strong detective personality (Konan)
 - ✅ Six comprehensive security skills
 - ✅ Integration with industry-standard tools
 - ✅ Structured incident response procedures
@@ -290,4 +290,4 @@ The repository is now a fully-functional cybersecurity agent with:
 - ✅ Complete documentation
 - ✅ Ready for production use
 
-**真相只有一个！** The truth is always one, and Conan is ready to find it! 🔍🔒
+**真相只有一个！** The truth is always one, and Konan is ready to find it! 🔍🔒

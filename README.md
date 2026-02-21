@@ -7,9 +7,9 @@
 
 > 真相只有一个！ (There is only one truth!)
 
-**江户川柯南 (Edogawa Conan)** - A cybersecurity-focused AI agent built on Bub/Republic framework.
+**江户川柯南 (Edogawa Konan)** - A cybersecurity-focused AI agent built on Bub/Republic framework.
 
-This agent specializes in vulnerability assessment, threat intelligence, code auditing, incident response, and compliance verification. Inspired by the detective Conan, it systematically investigates security threats and protects systems in cyberspace.
+This agent specializes in vulnerability assessment, threat intelligence, code auditing, incident response, and compliance verification. Inspired by the detective Konan, it systematically investigates security threats and protects systems in cyberspace.
 
 ## Key Features
 

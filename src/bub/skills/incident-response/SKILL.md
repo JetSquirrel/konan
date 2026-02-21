@@ -406,7 +406,7 @@ tar -czf ../INC-2024-001-evidence.tar.gz .
 cat > chain-of-custody.txt <<EOF
 Evidence ID: INC-2024-001-001
 Description: Auth log from compromised server
-Collected By: Edogawa Conan
+Collected By: Edogawa Konan
 Collected At: $(date -u)
 Hash: $(sha256sum auth.log | awk '{print $1}')
 Storage: evidence/INC-2024-001/

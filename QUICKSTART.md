@@ -1,4 +1,4 @@
-# Quick Start Guide - Conan Cybersecurity Agent
+# Quick Start Guide - Konan Cybersecurity Agent
 
 ## 🚀 5-Minute Setup
 
@@ -52,7 +52,7 @@ uv run bub message
 ```
 You: Can you scan the Docker image nginx:latest for vulnerabilities?
 
-Conan: 真相只有一个！Let me scan that image for you.
+Konan: 真相只有一个！Let me scan that image for you.
 
 [Agent activates $vulnerability-scanner skill]
 [Executes: trivy image nginx:latest --severity HIGH,CRITICAL]
@@ -72,7 +72,7 @@ CRITICAL:
 ```
 You: Is CVE-2024-21626 being actively exploited?
 
-Conan: Let me check the threat intelligence...
+Konan: Let me check the threat intelligence...
 
 [Agent activates $threat-intel skill]
 [Queries: NVD, CISA KEV, Wiz, exploit-db]
@@ -96,7 +96,7 @@ Recommendations:
 ```
 You: Please review ./src/auth.py for security issues
 
-Conan: Starting security code audit...
+Konan: Starting security code audit...
 
 [Agent activates $code-audit skill]
 [Runs: semgrep, bandit with security rulesets]
@@ -120,7 +120,7 @@ Fix: Use bcrypt or argon2
 ```
 You: We're seeing 200+ failed SSH attempts from 192.168.1.100
 
-Conan: 🚨 This looks like a brute force attack. Initiating incident response.
+Konan: 🚨 This looks like a brute force attack. Initiating incident response.
 
 [Agent activates $incident-response skill]
 
@@ -151,7 +151,7 @@ INVESTIGATION:
 ```
 You: Run a CIS Level 1 compliance check
 
-Conan: Starting CIS Ubuntu Benchmark Level 1 assessment...
+Konan: Starting CIS Ubuntu Benchmark Level 1 assessment...
 
 [Agent activates $compliance-check skill]
 [Runs: OpenSCAP, Lynis, custom checks]
@@ -175,7 +175,7 @@ HIGH PRIORITY GAPS:
 ```
 You: Analyze /var/log/auth.log for suspicious activity
 
-Conan: Analyzing authentication logs...
+Konan: Analyzing authentication logs...
 
 [Agent activates $log-analysis skill]
 
@@ -204,7 +204,7 @@ FINDINGS:
 ```
 You: Please conduct a comprehensive security assessment of this project
 
-Conan: Understood. I'll perform a complete security evaluation.
+Konan: Understood. I'll perform a complete security evaluation.
 
 [Agent activates multiple skills in sequence]
 
@@ -241,7 +241,7 @@ EXECUTIVE SUMMARY:
 ```
 You: We detected data exfiltration. Please investigate.
 
-Conan: 🚨 Starting incident investigation protocol.
+Konan: 🚨 Starting incident investigation protocol.
 
 [Agent follows structured incident response]
 
@@ -281,7 +281,7 @@ Evidence: evidence/INC-2024-001.tar.gz
 ```
 You: I need help with vulnerability scanning
 
-Conan: I recommend using $vulnerability-scanner skill.
+Konan: I recommend using $vulnerability-scanner skill.
 [Agent expands full skill documentation]
 ```
 
