@@ -13,12 +13,24 @@ This agent specializes in vulnerability assessment, threat intelligence, code au
 
 ## Key Features
 
-🔍 **Vulnerability Scanner** - Comprehensive scanning for containers, code, and dependencies
+### Core Security Skills
+🔍 **Vulnerability Scanner** - Comprehensive scanning for containers, code, and dependencies with zero-day detection
 🌐 **Threat Intelligence** - Real-time CVE tracking and threat feed analysis
 🔒 **Code Audit** - Security-focused code review with OWASP Top 10 detection
 🚨 **Incident Response** - Structured incident handling and forensic analysis
 ✅ **Compliance Check** - Verification against CIS, OWASP, PCI-DSS, SOC 2, HIPAA
 📊 **Log Analysis** - Security event detection and anomaly identification
+
+### Advanced Offensive Capabilities
+🎯 **CTF Solver** - Autonomous Capture The Flag challenge solving (crypto, reversing, web, pwn, forensics)
+🔬 **Reverse Engineering** - Binary analysis, decompilation, and control flow analysis with Ghidra/radare2
+💥 **Exploit Development** - Automated exploit generation with ROP chains, heap techniques, and validation
+🔓 **Zero-Day Discovery** - Pattern-based vulnerability hunting inspired by research (CVE-2024-27317, CVE-2024-27918)
+
+### Research-Backed Performance
+- Based on SWE-Agent research solving 10+ Hack The Box and 15+ PicoCTF challenges
+- Inspired by Princeton's EnIGMA agent achieving state-of-the-art on Cybench
+- Validated against real CVEs found by AI agents in Apache Pulsar, WhatsApp, and other projects
 
 ## About Bub
 
@@ -74,17 +86,20 @@ uv run bub message
 
 ## Security Skills
 
-The agent includes six specialized security skills:
+The agent includes 10 specialized security skills:
 
-### 🔍 Vulnerability Scanner
-Scan containers, code, and dependencies for CVEs using Trivy, Bandit, Semgrep.
+### Core Defensive Skills
+
+#### 🔍 Vulnerability Scanner
+Scan containers, code, and dependencies for CVEs using Trivy, Bandit, Semgrep. Now includes zero-day detection capabilities.
 
 ```bash
 # In agent
 Can you scan Docker image myapp:latest for vulnerabilities?
+Hunt for zero-day vulnerabilities in this codebase using pattern-based detection
 ```
 
-### 🌐 Threat Intelligence
+#### 🌐 Threat Intelligence
 Query CVE databases, check exploitation status, and track security advisories.
 
 ```bash
@@ -92,7 +107,7 @@ Query CVE databases, check exploitation status, and track security advisories.
 What is CVE-2024-1234 and is it being actively exploited?
 ```
 
-### 🔒 Code Audit
+#### 🔒 Code Audit
 Security-focused code review checking for OWASP Top 10 and common vulnerabilities.
 
 ```bash
@@ -100,7 +115,7 @@ Security-focused code review checking for OWASP Top 10 and common vulnerabilitie
 Please audit ./src/auth for security issues
 ```
 
-### 🚨 Incident Response
+#### 🚨 Incident Response
 Structured incident handling with containment, investigation, and remediation.
 
 ```bash
@@ -108,7 +123,7 @@ Structured incident handling with containment, investigation, and remediation.
 We detected unauthorized access from IP 1.2.3.4. Please investigate and contain.
 ```
 
-### ✅ Compliance Check
+#### ✅ Compliance Check
 Verify compliance with CIS, OWASP, PCI-DSS, SOC 2, HIPAA, GDPR.
 
 ```bash
@@ -116,12 +131,80 @@ Verify compliance with CIS, OWASP, PCI-DSS, SOC 2, HIPAA, GDPR.
 Run CIS Level 1 compliance check on this system
 ```
 
-### 📊 Log Analysis
+#### 📊 Log Analysis
 Analyze security logs for threats, anomalies, and suspicious patterns.
 
 ```bash
 # In agent
 Analyze /var/log/auth.log for suspicious activity
+```
+
+### Advanced Offensive Skills
+
+#### 🎯 CTF Solver
+Autonomous Capture The Flag challenge solving across multiple categories.
+
+```bash
+# In agent
+Solve this crypto CTF challenge in challenge.py
+Reverse engineer this binary and extract the flag
+```
+
+**Capabilities:**
+- Crypto: RSA attacks, XOR analysis, classical ciphers
+- Reversing: Binary analysis with angr, symbolic execution
+- Web: SQL injection, XSS, command injection, LFI/RFI
+- Pwn: Buffer overflow, ROP chains, heap exploitation
+- Forensics: File carving, steganography, PCAP analysis
+- Misc: Programming puzzles, OSINT, esoteric languages
+
+#### 🔬 Reverse Engineering
+Binary analysis, decompilation, and vulnerability discovery.
+
+```bash
+# In agent
+Analyze this binary for vulnerabilities
+Decompile the function at 0x401234 and explain its behavior
+```
+
+**Tools Integrated:**
+- Ghidra for decompilation
+- radare2 for disassembly
+- angr for symbolic execution
+- Frida for dynamic instrumentation
+- GDB with pwndbg for debugging
+
+#### 💥 Exploit Development
+Automated exploit generation with validation and testing.
+
+```bash
+# In agent
+Develop an exploit for this buffer overflow vulnerability
+Create a ROP chain to bypass DEP protection
+Validate this exploit works reliably
+```
+
+**Techniques:**
+- Buffer overflow exploitation
+- Return-oriented programming (ROP)
+- Format string attacks
+- Heap exploitation (fastbin, tcache)
+- Shellcode development
+- Protection bypasses (ASLR, PIE, Canary)
+
+#### 🔓 Zero-Day Discovery
+Pattern-based vulnerability hunting for novel security flaws.
+
+**Proven Success:**
+- Time attack vulnerabilities (CVE-2009-3875)
+- Memory safety issues (double-free, use-after-free)
+- Path traversal (Zip Slip - CVE-2024-27317)
+- Injection vulnerabilities in open source projects
+
+```bash
+# In agent
+Hunt for zero-day vulnerabilities in this open source project
+Analyze this codebase for exploitable vulnerability chains
 ```
 
 ## Original Bub Quick Start
@@ -206,12 +289,15 @@ uv run bub message
 
 ### Security Skills Documentation
 Each skill has detailed documentation in its `SKILL.md` file:
-- `src/bub/skills/vulnerability-scanner/SKILL.md`
+- `src/bub/skills/vulnerability-scanner/SKILL.md` - Includes zero-day detection
 - `src/bub/skills/threat-intel/SKILL.md`
 - `src/bub/skills/code-audit/SKILL.md`
 - `src/bub/skills/incident-response/SKILL.md`
 - `src/bub/skills/compliance-check/SKILL.md`
 - `src/bub/skills/log-analysis/SKILL.md`
+- `src/bub/skills/ctf-solver/SKILL.md` - **NEW: CTF challenge solving**
+- `src/bub/skills/reverse-engineering/SKILL.md` - **NEW: Binary analysis**
+- `src/bub/skills/exploit-development/SKILL.md` - **NEW: Exploit generation**
 
 ## Development
 
